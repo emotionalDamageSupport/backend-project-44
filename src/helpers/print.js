@@ -15,6 +15,10 @@ const printCongratulations = (userName) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
+const sayHello = (name) => {
+  console.log(`Hello, ${name}!`);
+};
+
 export {
-  printWrongAnswer, printQuestion, printResponse, printCongratulations,
+  printWrongAnswer, printQuestion, printResponse, printCongratulations, sayHello,
 };

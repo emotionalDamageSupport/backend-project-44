@@ -1,11 +1,13 @@
 import { TOTAL_ROUNDS } from './constants.js';
 import {
-  printQuestion, printCongratulations, printResponse, printWrongAnswer,
+  printQuestion, printCongratulations, printResponse, printWrongAnswer, sayHello,
 } from './helpers/print.js';
 import askAQuestion from './helpers/questions.js';
 
 const runGame = (rules, getQuestionAndAnswer) => {
+  console.log('Welcome to the Brain Games!');
   const playerName = askAQuestion();
+  sayHello(playerName);
 
   console.log(rules);
 
