@@ -1,4 +1,4 @@
-import { askAQuestion } from './helpers/questions.js';
+import askAQuestion from './helpers/questions.js';
 
 export default () => {
   console.log('Welcome to the Brain Games!');
