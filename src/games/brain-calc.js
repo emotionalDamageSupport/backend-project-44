@@ -23,7 +23,7 @@ const evaluateExpression = (expressionData) => {
     case '*':
       return firstNumber * secondNumber;
     default:
-      return null;
+      throw new Error('Unknown operation');
   }
 };
 
