@@ -15,4 +15,16 @@ const getGreatestCommonDivisor = (a, b) => {
   return gcd;
 };
 
-export { getRandomNumberInRange, checkIsEven, getGreatestCommonDivisor };
+const createProgression = (start, step, length) => {
+  const progression = [];
+
+  for (let i = 0; i < length; i += 1) {
+    progression.push(start + step * i);
+  }
+
+  return progression;
+};
+
+export {
+  getRandomNumberInRange, checkIsEven, getGreatestCommonDivisor, createProgression,
+};
