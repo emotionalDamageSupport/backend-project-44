@@ -8,7 +8,7 @@ brain-even:
 	node bin/brain-even.js
 
 calculator:
-	node bin/calculator.js
+	node bin/brain-calc.js
 
 publish:
 	npm publish --dry-run
