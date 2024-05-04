@@ -5,8 +5,8 @@ import runGame from '../index.js';
 
 const generateExpression = () => {
   const operation = OPERATIONS[getRandomNumberInRange(0, OPERATIONS.length - 1)];
-  const firstNumber = getRandomNumberInRange(1, 10);
-  const secondNumber = getRandomNumberInRange(1, 10);
+  const firstNumber = getRandomNumberInRange(1, 100);
+  const secondNumber = getRandomNumberInRange(1, 100);
 
   const expression = `${firstNumber} ${operation} ${secondNumber}`;
 

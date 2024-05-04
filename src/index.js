@@ -19,7 +19,6 @@ const runGame = (rules, getQuestionAndAnswer) => {
       printResponse(true);
       if (i === TOTAL_ROUNDS) {
         printCongratulations(playerName);
-        return;
       }
     } else {
       printResponse(false);
