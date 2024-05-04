@@ -6,3 +6,6 @@
 
 ### Demo brain-even game
 [![asciicast](https://asciinema.org/a/5ubUxBywSqKHRJgDCUvpHzFi8.svg)](https://asciinema.org/a/5ubUxBywSqKHRJgDCUvpHzFi8)
+
+### Demo calculator game
+[![asciicast](https://asciinema.org/a/HqXghEk92yb9P4SHk1Hl6WsEN.svg)](https://asciinema.org/a/HqXghEk92yb9P4SHk1Hl6WsEN)

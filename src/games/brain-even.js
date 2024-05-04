@@ -4,10 +4,16 @@ import runGame from '../index.js';
 
 const runBrainEvenGame = () => {
   const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
-  const getQuestionValue = () => getRandomNumberInRange(1, 100);
+
   const getCorrectAnswer = (question) => (checkIsEven(question) ? 'yes' : 'no');
 
-  runGame(rules, getQuestionValue, getCorrectAnswer);
+  const getQuestionAndAnswer = () => {
+    const questionValue = getRandomNumberInRange(1, 100);
+    const correctAnswer = getCorrectAnswer(questionValue);
+    return [questionValue, correctAnswer];
+  };
+
+  runGame(rules, getQuestionAndAnswer);
 };
 
 export default runBrainEvenGame;
