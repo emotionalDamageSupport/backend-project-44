@@ -1,6 +1,19 @@
-import { getRandomNumberInRange, getGreatestCommonDivisor } from '../utils/numberUtils.js';
+import getRandomNumberInRange from '../utils/numberUtils.js';
 
 import runGame from '../index.js';
+
+const getGreatestCommonDivisor = (a, b) => {
+  const smallerNumber = Math.min(a, b);
+  let gcd = 1;
+
+  for (let i = 1; i <= smallerNumber; i += 1) {
+    if (a % i === 0 && b % i === 0) {
+      gcd = i;
+    }
+  }
+
+  return gcd;
+};
 
 const runGcdGame = () => {
   const rules = 'Find the greatest common divisor of given numbers.';

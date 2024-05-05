@@ -1,7 +1,8 @@
-import { getRandomNumberInRange } from '../utils/numberUtils.js';
-import { OPERATIONS } from '../constants.js';
+import getRandomNumberInRange from '../utils/numberUtils.js';
 
 import runGame from '../index.js';
+
+const OPERATIONS = ['+', '-', '*'];
 
 const generateExpression = () => {
   const operation = OPERATIONS[getRandomNumberInRange(0, OPERATIONS.length - 1)];
@@ -13,8 +14,7 @@ const generateExpression = () => {
   return [firstNumber, secondNumber, operation, expression];
 };
 
-const evaluateExpression = (expressionData) => {
-  const [firstNumber, secondNumber, operation] = expressionData;
+const evaluateExpression = (firstNumber, secondNumber, operation) => {
   switch (operation) {
     case '+':
       return firstNumber + secondNumber;
@@ -31,8 +31,8 @@ const runCalculatorGame = () => {
   const rules = 'What is the result of the expression?';
 
   const getQuestionAndAnswer = () => {
-    const expressionData = generateExpression();
-    return [expressionData.at(-1), evaluateExpression(expressionData).toString()];
+    const [firstNumber, secondNumber, operation, expression] = generateExpression();
+    return [expression, evaluateExpression(firstNumber, secondNumber, operation).toString()];
   };
 
   runGame(rules, getQuestionAndAnswer);

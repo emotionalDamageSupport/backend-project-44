@@ -1,6 +1,8 @@
-import { getRandomNumberInRange, checkIsEven } from '../utils/numberUtils.js';
+import getRandomNumberInRange from '../utils/numberUtils.js';
 
 import runGame from '../index.js';
+
+const checkIsEven = (number) => number % 2 === 0;
 
 const runBrainEvenGame = () => {
   const rules = 'Answer "yes" if the number is even, otherwise answer "no".';

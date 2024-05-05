@@ -1,6 +1,16 @@
-import { getRandomNumberInRange, createProgression } from '../utils/numberUtils.js';
+import getRandomNumberInRange from '../utils/numberUtils.js';
 
 import runGame from '../index.js';
+
+const createProgression = (start, step, length) => {
+  const progression = [];
+
+  for (let i = 0; i < length; i += 1) {
+    progression.push(start + step * i);
+  }
+
+  return progression;
+};
 
 const runProgressionGame = () => {
   const rules = 'What number is missing in the progression?';
