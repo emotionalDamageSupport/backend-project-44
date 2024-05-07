@@ -4,9 +4,9 @@ import runGame from '../index.js';
 
 const checkIsEven = (number) => number % 2 === 0;
 
-const runBrainEvenGame = () => {
-  const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
+const runBrainEvenGame = () => {
   const getCorrectAnswer = (question) => (checkIsEven(question) ? 'yes' : 'no');
 
   const getQuestionAndAnswer = () => {

@@ -23,10 +23,8 @@ const runGame = (rules, getQuestionAndAnswer) => {
     }
 
     console.log('Correct!');
-    if (i === TOTAL_ROUNDS - 1) {
-      console.log(`Congratulations, ${playerName}!`);
-    }
   }
+  console.log(`Congratulations, ${playerName}!`);
 };
 
 export default runGame;

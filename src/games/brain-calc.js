@@ -4,6 +4,8 @@ import runGame from '../index.js';
 
 const OPERATIONS = ['+', '-', '*'];
 
+const rules = 'What is the result of the expression?';
+
 const generateExpression = () => {
   const operation = OPERATIONS[getRandomNumberInRange(0, OPERATIONS.length - 1)];
   const firstNumber = getRandomNumberInRange(1, 100);
@@ -28,8 +30,6 @@ const evaluateExpression = (firstNumber, secondNumber, operation) => {
 };
 
 const runCalculatorGame = () => {
-  const rules = 'What is the result of the expression?';
-
   const getQuestionAndAnswer = () => {
     const [firstNumber, secondNumber, operation, expression] = generateExpression();
     return [expression, evaluateExpression(firstNumber, secondNumber, operation).toString()];

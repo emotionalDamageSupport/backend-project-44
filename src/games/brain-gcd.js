@@ -2,6 +2,8 @@ import getRandomNumberInRange from '../utils/numberUtils.js';
 
 import runGame from '../index.js';
 
+const rules = 'Find the greatest common divisor of given numbers.';
+
 const getGreatestCommonDivisor = (a, b) => {
   const smallerNumber = Math.min(a, b);
   let gcd = 1;
@@ -16,8 +18,6 @@ const getGreatestCommonDivisor = (a, b) => {
 };
 
 const runGcdGame = () => {
-  const rules = 'Find the greatest common divisor of given numbers.';
-
   const getQuestionAndAnswer = () => {
     const number1 = getRandomNumberInRange(1, 100);
     const number2 = getRandomNumberInRange(1, 100);

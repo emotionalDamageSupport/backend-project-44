@@ -2,6 +2,8 @@ import getRandomNumberInRange from '../utils/numberUtils.js';
 
 import runGame from '../index.js';
 
+const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 const isPrime = (number) => {
   if (number < 2) {
     return false;
@@ -17,8 +19,6 @@ const isPrime = (number) => {
 };
 
 const runPrimeGame = () => {
-  const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-
   const getQuestionAndAnswer = () => {
     const number = getRandomNumberInRange(1, 500);
     const correctAnswer = isPrime(number) ? 'yes' : 'no';
